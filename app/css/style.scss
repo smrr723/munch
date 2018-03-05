@@ -1,5 +1,5 @@
 // Font Stack
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,900');
 $primary-font: 'Nunito', sans-serif;
 
 // Colors
@@ -10,7 +10,6 @@ $secondary-two: #3B1A57;
 $secondary-three: #69537D;
 $secondary-four: #1e1422;
 
-
 // Mixins
 @mixin flex-vhc {
   display: flex;
@@ -18,13 +17,46 @@ $secondary-four: #1e1422;
   align-items: center;
 }
 
-p {line-height: 1em;
-  }
-
 // Normalise
 body {
   margin: 0;
   font-family: $primary-font;
+  color: $primary-two;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 900;
+  border-bottom: 1px $primary-two solid;
+  padding: 0px 0px 7px 0px;
+}
+
+h2 {
+  color: $primary-one;
+  font-size: 1.1em;
+  font-weight: 900;
+}
+
+#logo {
+  font-weight: 900;
+  font-size: 1.8em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  padding: 0px 0px 0px 20px;
+}
+
+header {
+  margin-bottom: 60px;
+}
+
+aside {line-height: 1.2em;
 }
 
 .container {
@@ -38,30 +70,55 @@ body {
   justify-content: space-between;
 }
 
-section {
-
-}
-
 section#top {
   background: linear-gradient($primary-one, $secondary-one);
   @include flex-vhc;
   flex-direction: column;
-  padding: 10px 0px 40px 0px;
+  padding: 10px 0px 100px 0px;
+}
+
+#main-text {
+  width: 300px;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 section#mid {
   display: flex;
   justify-content: center;
   padding: 40px 0px 40px 0px;
+  color: $secondary-four;
+}
+
+.container-mid {
+  flex-wrap: wrap;
+  flex-direction: row;
+  @include flex-vhc;
 }
 
 .product {
   @include flex-vhc;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
 }
 
 .product-desc {
   text-align: center;
+  font-size: 0.8em;
+}
+
+.buy-button {
+  background-color: $primary-one;
+  border-radius: 4px;
+  padding: 6px 50px 6px 50px;
+  color: $primary-two;
+  font-weight: 400;
 }
 
 section#bottom {
@@ -71,11 +128,41 @@ section#bottom {
   padding: 40px 0px 40px 0px;
 }
 
+.container-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-desc {
+  width: 350px;
+  font-size: 0.7em;
+}
+
+form {
+  width: 320px;
+}
+
+form input {
+  border-radius: 3px;
+  border: 0px;
+  padding: 5px 20px 5px 20px;
+  margin: 10px 5px 10px 5px;
+  background: $secondary-three;
+}
+
+
+
 footer {
   background-color: $secondary-four;
   @include flex-vhc;
   padding: 20px 0px 20px 0px;
+  color: $secondary-three;
+  font-size: 0.6em;
 }
 .footer-container {
   justify-content: space-between;
+}
+
+.footer-item .fab {
+  padding: 0px 0px 0px 10px;
 }

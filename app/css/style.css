@@ -1,10 +1,37 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-p {
-  line-height: 1em; }
-
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700,900");
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+  color: #FFFFFF; }
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 900;
+  border-bottom: 1px #FFFFFF solid;
+  padding: 0px 0px 7px 0px; }
+
+h2 {
+  color: #EF0652;
+  font-size: 1.1em;
+  font-weight: 900; }
+
+#logo {
+  font-weight: 900;
+  font-size: 1.8em; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row; }
+
+nav ul li {
+  padding: 0px 0px 0px 20px; }
+
+header {
+  margin-bottom: 60px; }
+
+aside {
+  line-height: 1.2em; }
 
 .container {
   width: 950px;
@@ -21,21 +48,48 @@ section#top {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px 0px 40px 0px; }
+  padding: 10px 0px 100px 0px; }
+
+#main-text {
+  width: 300px; }
+
+.container-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 section#mid {
   display: flex;
   justify-content: center;
-  padding: 40px 0px 40px 0px; }
+  padding: 40px 0px 40px 0px;
+  color: #1e1422; }
+
+.container-mid {
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .product {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px; }
 
 .product-desc {
-  text-align: center; }
+  text-align: center;
+  font-size: 0.8em; }
+
+.buy-button {
+  background-color: #EF0652;
+  border-radius: 4px;
+  padding: 6px 50px 6px 50px;
+  color: #FFFFFF;
+  font-weight: 400; }
 
 section#bottom {
   background-color: #3B1A57;
@@ -43,12 +97,35 @@ section#bottom {
   justify-content: center;
   padding: 40px 0px 40px 0px; }
 
+.container-bottom {
+  display: flex;
+  justify-content: space-between; }
+
+#contact-desc {
+  width: 350px;
+  font-size: 0.7em; }
+
+form {
+  width: 320px; }
+
+form input {
+  border-radius: 3px;
+  border: 0px;
+  padding: 5px 20px 5px 20px;
+  margin: 10px 5px 10px 5px;
+  background: #69537D; }
+
 footer {
   background-color: #1e1422;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px 20px 0px; }
+  padding: 20px 0px 20px 0px;
+  color: #69537D;
+  font-size: 0.6em; }
 
 .footer-container {
   justify-content: space-between; }
+
+.footer-item .fab {
+  padding: 0px 0px 0px 10px; }
