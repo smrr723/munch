@@ -27,6 +27,10 @@ nav ul {
 nav ul li {
   padding: 0px 0px 0px 20px; }
 
+nav ul li:hover {
+  color: #1e1422;
+  transition: 0.5s; }
+
 header {
   margin-bottom: 60px; }
 
@@ -91,6 +95,11 @@ section#mid {
   color: #FFFFFF;
   font-weight: 400; }
 
+.buy-button:hover {
+  background-color: #C71281;
+  transition: 0.3s;
+  transform: translateY(-2px); }
+
 section#bottom {
   background-color: #3B1A57;
   display: flex;
@@ -106,14 +115,38 @@ section#bottom {
   font-size: 0.7em; }
 
 form {
-  width: 320px; }
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; }
 
-form input {
+#form-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+form input, textarea {
   border-radius: 3px;
   border: 0px;
-  padding: 5px 20px 5px 20px;
+  padding: 7px 20px 7px 20px;
   margin: 10px 5px 10px 5px;
   background: #69537D; }
+
+input::placeholder, textarea::placeholder {
+  color: #FFFFFF; }
+
+input#firstname, input#lastname {
+  width: 35%; }
+
+textarea {
+  width: 400px;
+  height: 150px; }
+
+button#send {
+  border-radius: 4px;
+  padding: 6px 50px 6px 50px;
+  color: #1e1422;
+  font-weight: 400; }
 
 footer {
   background-color: #1e1422;

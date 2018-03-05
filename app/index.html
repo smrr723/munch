@@ -85,11 +85,13 @@ velit, sed quia non numquam eius modi tempora incidunt ut
 labore et dolore magnam aliquam quaerat voluptatem.</p>
     </div>
   </aside>
-  <form action="">
-    <input type="text">
-    <input type="text">
-    <input type="text">
-    <button>Send</button>
+  <form action="" name="contact" id="contactform" onsubmit="return validateForm()">
+    <div id="form-container">
+    <input type="text" name="firstname" id="firstname" placeholder="First name">
+    <input type="text" name="lastname" id="lastname" placeholder="Last name">
+    </div>
+    <textarea form="contactform" name="message" id="message" placeholder="Message"></textarea>
+    <button id="send">Send</button>
   </form>
   </div>
 </section>
